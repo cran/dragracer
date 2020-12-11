@@ -368,17 +368,18 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(dragracer)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(tibble)</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="co">#&gt; </span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="co">#&gt; Attaching package: &#39;dplyr&#39;</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co">#&gt; The following objects are masked from &#39;package:stats&#39;:</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="co">#&gt; </span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#&gt;     filter, lag</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#&gt; The following objects are masked from &#39;package:base&#39;:</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#&gt; </span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="kw">library</span>(tidyr)</span></code></pre></div>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#&gt; The library is now open</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">library</span>(tibble)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co">#&gt; </span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co">#&gt; Attaching package: &#39;dplyr&#39;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co">#&gt; The following objects are masked from &#39;package:stats&#39;:</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#&gt; </span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#&gt;     filter, lag</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#&gt; The following objects are masked from &#39;package:base&#39;:</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#&gt; </span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="kw">library</span>(tidyr)</span></code></pre></div>
 <p>The <code>dragracer</code> package has three data sets. The first is episode-level data (<code>rpdr_ep</code>). These data contain some more granular information about each episode that may not be discernible from how episodes are typically summarized on Wikipedia (e.g. mini-challenge winners, runway themes [where applicable], lip-sync song and artist). The second data set is contestant-level (<code>rpdr_contestants</code>). This data frame includes the contestant name, hometown, and purported date of birth and age by the start of the show. The third data set is episode-contestant-level data (<code>rpdr_contep</code>). This is the most familiar form of the data that a reader of the show’s Wikipedia entries could discern. They include information about how a contestant fared in a particular episode (i.e. whether they won, scored high, were safe, scored low, or were in the bottom). The show’s fans are accustomed to seeing this form of the data as akin to a pyramid. However, I convert the data from wide to long, making the data akin to a survival data-generating process.</p>
 <p>Here are some potential uses of the data.</p>
 <div id="summarizing-the-data" class="section level1">
