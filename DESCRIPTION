@@ -1,7 +1,7 @@
 Package: dragracer
 Type: Package
 Title: Data Sets for RuPaul's Drag Race
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: person("Steve", "Miller",
                   email = "steven.v.miller@gmail.com", 
                   role = c("aut", "cre"),
@@ -23,7 +23,7 @@ RoxygenNote: 7.1.1
 Suggests: knitr, tidyr, tibble, dplyr, rmarkdown, testthat
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-12-11 20:02:26 UTC; steve
+Packaged: 2021-08-17 14:07:27 UTC; steve
 Author: Steve Miller [aut, cre] (<https://orcid.org/0000-0003-4072-6263>)
 Repository: CRAN
-Date/Publication: 2020-12-11 20:20:02 UTC
+Date/Publication: 2021-08-17 14:20:02 UTC
